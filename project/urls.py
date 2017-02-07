@@ -8,7 +8,13 @@ urlpatterns = [
     # url(r'^$', 'project.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^$', index),
-    url(r'^health$', health),
-    url(r'^admin/', include(admin.site.urls)),
+    # url(r'^$', index),
+    # url(r'^health$', health),
+    # url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include('snippets.urls')),
+    
+]
+urlpatterns += [
+    url(r'^api-auth/', include('rest_framework.urls',
+                               namespace='rest_framework')),
 ]
