@@ -3,3 +3,12 @@ django-debug-toolbar==1.5
 gunicorn==19.4.5
 psycopg2==2.6.1
 whitenoise==3.0
+Pygments==2.2.0
+coreapi==2.1.1
+djangorestframework==3.5.3
+httpie==0.9.9
+itypes==1.1.0
+requests==2.13.0
+sqlparse==0.2.2
+uritemplate==3.0.0
+wsgiref==0.1.2
